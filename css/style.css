@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 10 px*/
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+
+  background-repeat: no-repeat, no-repeat;
+
+  background-position: right 45vw bottom 45vh, 45vw 45vh;
+}
+.card-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 35rem;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 1.9rem;
+}
+.card-image img {
+    display: block;
+  width: 100%;
+}
+
+.card-content {
+  position: relative;
+}
+
+.card__user-image img {
+  width: 9rem;
+  border-radius: 100%;
+  box-shadow: 0 0 0 5px #fff;
+  position: absolute;
+  left: 37%;
+  top: -25%;
+}
+
+.card-content__text {
+  padding: 3rem 0 1.5rem 0;
+}
+.secondary-heading {
+  margin: 2.5rem 0 0 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.age {
+  font-weight: normal;
+  color: hsl(227, 10%, 46%);
+  margin-left: 0.5rem;
+}
+.city {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: hsl(227, 10%, 46%);
+  padding: 0.5rem 0;
+}
+
+.card-content__stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid hsla(227, 10%, 46%, 0.3);
+}
+.stats {
+  margin: 2.5rem;
+}
+.stats-count {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.stats-name {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  padding-top: 0.5rem;
+}
+
+/* 500px */
+@media screen and (max-width: 32em) {
+  html {
+    font-size: 50%;
+  }
+}
