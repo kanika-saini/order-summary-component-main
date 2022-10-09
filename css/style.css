@@ -38,15 +38,16 @@ body {
   overflow: hidden;
   background-color: #fff;
   border-radius: 1.9rem;
+  position: relative;
 }
 .card-image img {
     display: block;
   width: 100%;
 }
-
+/* 
 .card-content {
   position: relative;
-}
+} */
 
 .card__user-image img {
   width: 9rem;
@@ -54,7 +55,7 @@ body {
   box-shadow: 0 0 0 5px #fff;
   position: absolute;
   left: 37%;
-  top: -25%;
+  top: 25%;
 }
 
 .card-content__text {
